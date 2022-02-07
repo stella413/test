@@ -1,0 +1,85 @@
+<html>
+<head>
+    <!--Some of the link resources are from:https://getbootstrap.com/-->
+    <title>UDW SignUp Student</title>
+    <link rel="stylesheet" type="text/css" href="Homepage.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="signupstu.js"></script>
+</head>
+
+<body class="body">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="file:///Users/huruobing/Desktop/class/502/week6/Assignment%201/Home%20Page.html">CMS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="file:///Users/huruobing/Desktop/class/502/week6/Assignment%201/Enroll%20Your%20Unit.html">Unit Enrolment</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="file:///Users/huruobing/Desktop/class/502/week6/Assignment%201/UnitDetail.html">UnitDetails</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="file:///Users/huruobing/Desktop/class/502/week6/Assignment%201/Individual%20Timetable.html">MyTimetable</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="file:///Users/huruobing/Desktop/class/502/week6/Assignment%201/Tutorial%20Allocation.html">TutorialAllocation</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="file:///Users/huruobing/Desktop/class/502/week6/Assignment%201/Master%20list.html">MasterList</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="file:///Users/huruobing/Desktop/class/502/week6/Assignment%201/UnitManagement.html">UnitManagement</a>
+            </li>
+            <li  class="SignInButton">
+                <a href="file:///Users/huruobing/Desktop/class/502/week6/Assignment%201/Sign%20In.html"><button class="btn btn-success">Sign In</button></a>
+            </li>
+            <li  class="SignUpStudent">
+                <a href="file:///Users/huruobing/Desktop/class/502/week6/Assignment%201/SignUp%20Student.html"><button class="btn btn-primary">SignUp as Student</button></a>
+            </li>
+            <li  class="SignUpStaff">
+                <a href="file:///Users/huruobing/Desktop/class/502/week6/Assignment%201/SignUp%20Staff.html"><button class="btn btn-info">SignUp as Staff</button></a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <form class="form-signIn" id="validation" onsubmit="return  check();">
+        <h2 class="RegistrationTitle">Student Creat New CMS Account</h2>
+            <label class="StudentID" id="StudentID">Student ID:</label>
+            <input class="form-control" placeholder="Student ID" >
+        <br>
+            <label class="Name">Name:</label>
+            <input class="form-control" placeholder="Name" id="name">
+        <br>
+            <label for="inputEmail" >Email address:</label>
+            <input type="email" class="form-control" placeholder="Email address" id="inputEmail" >
+        <br>
+            <label for="inputPassword"  >Password:</label>
+            <input type="password" class="form-control" placeholder="Password" id="inputPassword">
+        <br>
+            <label for="inputPassword"  >Confirm Password:</label>
+            <input type="password" class="form-control" placeholder="Confirm Password" id="confirmPassword">
+        <br>
+            <label class="Address">Address:</label>
+            <input class="form-control" placeholder="optional">
+        <br>
+            <label class="Date of Birth">Date of Birth:</label>
+            <input class="form-control" placeholder="optional">
+        <br>
+            <label class="Phone number">Phone number:</label>
+            <input class="form-control" placeholder="optional">
+        <br>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+    </form>
+</div>
+</body>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Some of the link resources are from:https://getbootstrap.com/-->
+    <meta charset="UTF-8">
+    <title>Unit Detail</title>
+    <link rel="stylesheet" type="text/css" href="Homepage.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="file:///Users/huruobing/Desktop/class/502/week6/Assignment%201/Home%20Page.html">CMS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="file:///Users/huruobing/Desktop/class/502/week6/Assignment%201/Enroll%20Your%20Unit.html">Unit Enrolment</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="file:///Users/huruobing/Desktop/class/502/week6/Assignment%201/UnitDetail.html">UnitDetails</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="file:///Users/huruobing/Desktop/class/502/week6/Assignment%201/Individual%20Timetable.html">MyTimetable</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="file:///Users/huruobing/Desktop/class/502/week6/Assignment%201/Tutorial%20Allocation.html">TutorialAllocation</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="file:///Users/huruobing/Desktop/class/502/week6/Assignment%201/Master%20list.html">MasterList</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="file:///Users/huruobing/Desktop/class/502/week6/Assignment%201/UnitManagement.html">UnitManagement</a>
+            </li>
+            <li  class="SignInButton">
+                <a href="file:///Users/huruobing/Desktop/class/502/week6/Assignment%201/Sign%20In.html"><button class="btn btn-success">Sign In</button></a>
+            </li>
+            <li  class="SignUpStudent">
+                <a href="file:///Users/huruobing/Desktop/class/502/week6/Assignment%201/SignUp%20Student.html"><button class="btn btn-primary">SignUp as Student</button></a>
+            </li>
+            <li  class="SignUpStaff">
+                <a href="file:///Users/huruobing/Desktop/class/502/week6/Assignment%201/SignUp%20Staff.html"><button class="btn btn-info">SignUp as Staff</button></a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+<div class="jumbotron text-center">
+    <div class="container">
+        <h1><strong>Unit Management</strong></h1>
+        <p>
+            The page includes Table of unit details, offering semester, campus, UC, and etc. and only DC can
+            access to it. <br>This will be a part of Assignment 2<br>
+        </p>
+    </div>
+</div>
+<div class="container">
+    <h2>Unit Management:</h2>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Unit Name</th>
+            <th>Campus</th>
+            <th>Semester</th>
+            <th>Lecturer</th>
+            <th>Unit Coordinator</th>
+            <th>confirm </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>KIT 502 Web Development</td>
+            <td>
+                <select>
+                    <option>Neverland</option>
+                    <option>Rivendell</option>
+                    <option>Pandora</option>
+                </select>
+            </td>
+            <td>
+                <select>
+                    <option>semester 1</option>
+                    <option>Semester 2</option>
+                    <option>Winter School</option>
+                    <option>Spring School</option>
+                </select>
+            </td>
+            <td>
+                <select>
+                    <option>Kevin</option>
+                    <option>Robin</option>
+                    <option>Bob</option>
+                    <option>Alisa</option>
+                </select>
+            </td>
+            <td>
+                <select>
+                    <option>Lois</option>
+                    <option>Robin</option>
+                    <option>Bob</option>
+                    <option>Alisa</option>
+                </select>
+            </td>
+            <td><button class="btn btn-warning">Confirm</button></td>
+
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
